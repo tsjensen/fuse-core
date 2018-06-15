@@ -1,0 +1,99 @@
+# Fuse Core Theme for Jekyll - Settings
+# https://github.com/tsjensen/fuse-core
+
+markdown: kramdown
+permalink: pretty
+
+# CAUTION
+# When modifying this file, take care to preserve the indentation. This is YAML ...
+
+# Main Headline, name required, subtitle optional
+name: Jonathan Doe
+#subtitle:
+subtitle: Frontend Developer
+
+# Title attribute of HTML Page, uses 'name' from above if empty
+title:
+
+# Information for web crawlers / Google, all of them optional
+# 'description' and 'keywords' simply set the corresponding meta tags,
+# 'crawl' is the 'Robots' tag http://www.robotstxt.org/meta.html
+robots:
+    description: One line of text describing the content of the page in less than 140 characters.
+    keywords: foo, bar, baz
+    crawl: index,follow
+
+# website address when deployed, also given as canonical link
+url: https://tsjensen.github.io/fuse-core/
+
+# The 'baseurl' is prepended to all website-internal links.
+# 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
+# If your local "jekyll serve" throws errors, change this to '' or run it like so: jekyll serve --baseurl=''
+#baseurl: ''
+baseurl: '/fuse-core'
+
+# Enable Google Analytics. Leave empty (just "ga:" with subitems commented out) to disable.
+# In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge the GA cookies.
+# Also, some places require you to anonymize the users' IPs, which can be enabled via 'anonymizeip' below. When in doubt, enable.
+# https://support.google.com/analytics/answer/2763052
+ga:
+#ga:
+#    account: 'UA-12345678-1'
+#    cookieconsent: true
+#    anonymizeip: true
+
+# A picture of you. Leave empty for generic placeholder image.
+# You can use your GitHub image:
+#avatar:
+avatar: "https://avatars3.githubusercontent.com/u/32414568"
+#avatar: "images/jonathan_doe.jpg"
+
+# All the user IDs on other websites that we want to link to. Leave blank what you don't need.
+# The order in which these links appear is controlled in index.html, by reordering the paragraphs.
+links:
+    github:  tsjensen
+    codepen:
+    facebook: your_facebook_username
+    vkontakte: your_vkontakte_username
+    twitter: your_twitter_username
+    weibo: your_weibo_username
+    linkedin:
+    xing:
+    googleplus:
+    vine:
+    instagram:
+    flickr:
+    steam:
+    soundcloud:
+    stackoverflow:
+    reddit:
+    medium:
+    tumblr:
+    lastfm:
+    blog: http://host.domain/your_blog
+    publickey: https://pastebin.com/raw/YOUR_PUBLIC_KEY
+    email: jonathan.doe@host.domain
+
+# Featured links appear in their own row below the other links in their own color. Add any number of links.
+# Leave empty to disable. 'icon' is the name of any "solid" icon in the Font Awesome
+# Gallery: https://fontawesome.com/icons?d=gallery&s=solid
+# 'caption' may be empty; if set, text displayed below the icon.
+featured_links:
+#featured_links:
+#  - link_one:
+#      name: Number One
+#      icon: link
+#      link: https://host.domain/foo/
+#      caption: O-n-e
+#  - link_two:
+#      name: Number Two
+#      icon: link
+#      link: https://host.domain/bar/
+#      caption:
+#  - link_three:
+#      name: Number Three
+#      icon: link
+#      link: /baz/
+#      caption: More than<br>one line
+
+#EOF
