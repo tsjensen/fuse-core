@@ -10,7 +10,7 @@ exclude: ['README.md', 'LICENSE.txt']
 # When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
-name: Jonathan Doe
+name: Fuse Core
 #subtitle:
 subtitle: Frontend Developer
 
