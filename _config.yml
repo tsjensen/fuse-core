@@ -3,6 +3,8 @@
 
 markdown: kramdown
 permalink: pretty
+exclude: ['README.md', 'LICENSE.txt']
+
 
 # CAUTION
 # When modifying this file, take care to preserve the indentation. This is YAML ...
