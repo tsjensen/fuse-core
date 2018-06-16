@@ -20,7 +20,7 @@ summarizes the links to your social media profiles and external content. It is:
 
 ## License
 
-The *Fuse Core* theme is free software under the terms of the
+The *Fuse Core* theme is free to use and modify under the terms of the
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 ## Ancestry
@@ -30,14 +30,14 @@ The visual design for this theme is taken from the
 Big thank you, it looks awesome!
 
 However, the *Fuse Core* theme is a complete reimplementation, which makes it very different on the inside.
-There are many improvements big and small over front-cover, making *Fuse Core* a kind of "Front Cover 2.0" or
-"Front Cover Plus":
+There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
+"front-cover Plus":
 
-- Ability to show "featured" links in a separate row of icons. Featured link icons optionally have captions and
-  may point anywhere. They also have their own icons chosen from all of Font Awesome's solid icons.
+- Complete configuration via *_config.yml*, including order of links or adding of new links.
+- Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
 - Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
   because a myriad of problems are already handled by the folks at Bootstrap.
-- Up-to-date libraries, especially Font Awesome 5.
+- Up-to-date libraries, especially Font Awesome&nbsp;5.
 - Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including some legal details
   such as IP anonymization and cookie consent popup (all optional).
 - Search engine control via configurable meta tags
