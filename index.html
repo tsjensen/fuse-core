@@ -2,7 +2,7 @@
 permalink: /
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,10 +53,10 @@ permalink: /
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.css"
           integrity="sha384-Ul1H8jNudxII4JYT6VbQzsJj2XTAqp3zPv1YJwsTd19vCwtNBq+dgWS3DHuulhVe" />
-    <script type="text/javascript" crossorigin="anonymous"
+    <script async crossorigin="anonymous"
           src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.js"
           integrity="sha384-MUoyijeybCtm4GFBhubnlrS2TscWkBDFkwCzXMofOGhiTYxVzoSfwaCM7HtNFzwN"></script>
-    <script type="text/javascript">
+    <script>
         window.addEventListener("load", function(){
           window.cookieconsent.initialise({
             "cookie": { "expiryDays": 730 },
@@ -76,7 +76,7 @@ permalink: /
 <div class="container fuse-core-content pb-4">
 
 <div class="row pt-sm-4">
-    <div class="col text-center"><img id="avatar" class="my-3 my-sm-4"
+    <div class="col text-center"><img id="avatar" class="my-3 my-sm-4" alt="{{ site.name }}"
         src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
         else %}{{ site.baseurl }}/{{ site.avatar }}{% endif %}{%
         else %}{{ site.baseurl }}/images/avatar.svg{% endif %}"></div>
