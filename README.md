@@ -4,6 +4,8 @@
 
 **A lightweight Jekyll theme for single-page personal websites.**
 
+[![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
+
 This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
 summarizes the links to your social media profiles and external content. It is:
 
