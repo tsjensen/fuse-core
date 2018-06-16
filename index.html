@@ -74,6 +74,7 @@ permalink: /
 
 <div class="glass-pane">
 <div class="container fuse-core-content pb-4">
+
 <div class="row pt-sm-4">
     <div class="col text-center"><img id="avatar" class="my-3 my-sm-4"
         src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
@@ -88,147 +89,16 @@ permalink: /
 </div>
 
 <div class="row justify-content-center links pt-1 pt-sm-2">
-    {% if site.links.xing %}
+{% for hash in site.links %}{% for linkInfo in hash %}{% if linkInfo[1].show %}
     <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://www.xing.com/profile/{{ site.links.xing }}/"><i class="fab fa-xing fa-fw"></i>
-        <span class="d-inline d-sm-none">Xing</span></a></div>
-    {% endif %}
-
-    {% if site.links.linkedin %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://linkedin.com/in/{{ site.links.linkedin }}/"><i class="fab fa-linkedin fa-fw"></i>
-        <span class="d-inline d-sm-none">LinkedIn</span></a></div>
-    {% endif %}
-
-    {% if site.links.googleplus %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://plus.google.com/+{{ site.links.googleplus }}"><i class="fab fa-google-plus fa-fw"></i>
-        <span class="d-inline d-sm-none">Google+</span></a></div>
-    {% endif %}
-
-    {% if site.links.twitter %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://twitter.com/{{ site.links.twitter }}"><i class="fab fa-twitter fa-fw"></i>
-        <span class="d-inline d-sm-none">Twitter</span></a></div>
-    {% endif %}
-
-    {% if site.links.weibo %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://weibo.com/{{ site.links.weibo }}"><i class="fab fa-weibo fa-fw"></i>
-        <span class="d-inline d-sm-none">微博</span></a></div>
-    {% endif %}
-
-    {% if site.links.vine %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://vine.co/{{ site.links.vine }}"><i class="fab fa-vine fa-fw"></i>
-        <span class="d-inline d-sm-none">Vine</span></a></div>
-    {% endif %}
-
-    {% if site.links.facebook %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://facebook.com/{{ site.links.facebook }}"><i class="fab fa-facebook fa-fw"></i>
-        <span class="d-inline d-sm-none">Facebook</span></a></div>
-    {% endif %}
-
-    {% if site.links.vkontakte %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://vk.com/{{ site.links.vkontakte }}"><i class="fab fa-vk fa-fw"></i>
-        <span class="d-inline d-sm-none">ВКонтакте</span></a></div>
-    {% endif %}
-
-    {% if site.links.instagram %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://instagram.com/{{ site.links.instagram }}"><i class="fab fa-instagram fa-fw"></i>
-        <span class="d-inline d-sm-none">Instagram</span></a></div>
-    {% endif %}
-
-    {% if site.links.flickr %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://flickr.com/photos/{{ site.links.flickr }}"><i class="fab fa-flickr fa-fw"></i>
-        <span class="d-inline d-sm-none">Flickr</span></a></div>
-    {% endif %}
-
-    {% if site.links.steam %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="http://steamcommunity.com/id/{{ site.links.steam }}"><i class="fab fa-steam fa-fw"></i>
-        <span class="d-inline d-sm-none">Steam</span></a></div>
-    {% endif %}
-
-    {% if site.links.soundcloud %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://soundcloud.com/{{ site.links.soundcloud }}"><i class="fab fa-soundcloud fa-fw"></i>
-        <span class="d-inline d-sm-none">Soundcloud</span></a></div>
-    {% endif %}
-
-    {% if site.links.lastfm %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="http://www.last.fm/user/{{ site.links.lastfm }}"><i class="fab fa-lastfm fa-fw"></i>
-        <span class="d-inline d-sm-none">Last.fm</span></a></div>
-    {% endif %}
-
-    {% if site.links.github %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://github.com/{{ site.links.github }}"><i class="fab fa-github fa-fw"></i>
-        <span class="d-inline d-sm-none">GitHub</span></a></div>
-    {% endif %}
-
-    {% if site.links.codepen %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://codepen.io/{{ site.links.codepen }}"><i class="fab fa-codepen fa-fw"></i>
-        <span class="d-inline d-sm-none">CodePen</span></a></div>
-    {% endif %}
-
-    {% if site.links.stackoverflow %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://stackoverflow.com/users/{{ site.links.stackoverflow }}/"><i class="fab fa-stack-overflow fa-fw"></i>
-        <span class="d-inline d-sm-none">Stack Overflow</span></a></div>
-    {% endif %}
-
-    {% if site.links.reddit %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://reddit.com/user/{{ site.links.reddit }}"><i class="fab fa-reddit fa-fw"></i>
-        <span class="d-inline d-sm-none">Reddit</span></a></div>
-    {% endif %}
-
-    {% if site.links.medium %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://medium.com/@{{ site.links.medium }}"><i class="fab fa-medium fa-fw"></i>
-        <span class="d-inline d-sm-none">Medium</span></a></div>
-    {% endif %}
-
-    {% if site.links.tumblr %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://{{ site.links.tumblr }}.tumblr.com/"><i class="fab fa-tumblr fa-fw"></i><span
-        class="d-inline d-sm-none">Tumblr</span></a></div>
-    {% endif %}
-
-    {% if site.links.blog %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="{{ site.baseurl }}{{ site.links.blog }}"><i class="fas fa-book-open fa-fw"></i>
-        <span class="d-inline d-sm-none">Blog</span></a></div>
-    {% endif %}
-
-    {% if site.links.email %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="mailto:{{ site.links.email }}"><i class="fas fa-envelope fa-fw"></i>
-        <span class="d-inline d-sm-none">Email</span></a></div>
-    {% endif %}
-
-    {% if site.links.publickey %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="{{ site.links.publickey }}"><i class="fas fa-key fa-fw"></i>
-        <span class="d-inline d-sm-none">PGP Key</span></a></div>
-    {% endif %}
+        href="{{ linkInfo[1].href }}"><i class="{{ linkInfo[1].icon }} fa-fw"></i>
+        <span class="d-inline d-sm-none">{{ linkInfo[1].name }}</span></a></div>
+{% endif %}{% endfor %}{% endfor %}
 </div>
 
-{% if site.featured_links %}
-<div class="row justify-content-center links featured">
-{% for hash in site.featured_links %}{% for featuredLink in hash %}
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="{{ featuredLink[1].link }}"><i class="fas fa-{{ featuredLink[1].icon }} fa-fw"></i>
-        <span class="d-inline d-sm-none">{{ featuredLink[1].name }}</span></a>{% if featuredLink[1].caption %}
-    <div class="fc-caption pt-1 d-none d-sm-block">{{ featuredLink[1].caption }}</div>{% endif %}</div>
-{% endfor %}{% endfor %}
+{% if site.extra_html %}
+<div class="row justify-content-center">
+    <div class="col mt-2 mt-sm-3 text-sm-center fuse-core-extra">{{ site.extra_html }}</div>
 </div>
 {% endif %}
 
@@ -236,7 +106,8 @@ permalink: /
 </div>
 
 <footer><div class="container"><div class="row">
-<div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a> Jekyll theme.</div>
+    <div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a>
+    Jekyll theme.</div>
 </div></div></footer>
 
 </body>

@@ -1,4 +1,4 @@
-/* Fuse Core Jekyll Theme */
+/* ========= Fuse Core Jekyll Theme ============================================================ */
 
 html, body {
     font-family: 'Open Sans',Arial,Helvetica,sans-serif;
@@ -10,6 +10,7 @@ html {
 body {
     margin-bottom: 44px;  /* footer height */
 }
+
 .fullscreen-background {
     background: url("../images/background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -17,9 +18,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
-
-/* --------- Content (avatar, title, normal links) --------------------------------------------- */
 
 div.glass-pane {
     background-color: rgba(0, 0, 0, 0.5);
@@ -30,18 +28,34 @@ div.glass-pane {
 div.fuse-core-content {
     color: white;
 }
+
+
+/* --------- Avatar ---------------------------------------------------------------------------- */
+
 #avatar {
     height: 180px;
     border-radius: 100%;
     border: 5px solid white;
 }
+
+
+/* --------- Title / Subtitle ------------------------------------------------------------------ */
+
 h1 {
     letter-spacing: 0.1em;
     font-size: 3em;
 }
+@media (max-width: 575.98px) {  /* bootstrap 'xs' */
+    h1 {
+        letter-spacing: 0;
+    }
+}
 h3 {
     font-size: 1.2em;
 }
+
+
+/* --------- The Main Links -------------------------------------------------------------------- */
 
 div.row.links > div {
     white-space: nowrap;
@@ -72,9 +86,6 @@ div.row.links a:hover {
 }
 
 @media (max-width: 575.98px) {  /* bootstrap 'xs' */
-    h1 {
-        letter-spacing: 0;
-    }
     div.row.links a {
         border-radius: 10px;
         width: 100%;
@@ -82,20 +93,20 @@ div.row.links a:hover {
 }
 
 
-/* --------- Featured Links -------------------------------------------------------------------- */
+/* --------- Extra HTML ------------------------------------------------------------------------ */
 
-div.row.links.featured a {
-    color: #f9cf93;
-    border-color: #f9cf93;
+.fuse-core-extra {
+    color: rgba(255, 255, 255, 0.7);
 }
-div.row.links.featured a:hover {
-    color: #ffe4be;
-    border-color: #ffe4be;
+.fuse-core-extra a {
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    padding: 0 2px;
 }
-div.row.links.featured .fc-caption {
-    color: #f9cf93;
-    line-height: 14px;
-    font-size: smaller;
+.fuse-core-extra a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 

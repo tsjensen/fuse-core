@@ -38,64 +38,138 @@ baseurl: '/fuse-core'
 # In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge the GA cookies.
 # Also, some places require you to anonymize the users' IPs, which can be enabled via 'anonymizeip' below. When in doubt, enable.
 # https://support.google.com/analytics/answer/2763052
-ga:
 #ga:
-#    account: 'UA-12345678-1'
-#    cookieconsent: true
-#    anonymizeip: true
+ga:
+    account: 'UA-120960520-1'
+    cookieconsent: true
+    anonymizeip: true
 
 # A picture of you. Leave empty for generic placeholder image.
 # You can use your GitHub image:
-#avatar:
 avatar: "https://avatars3.githubusercontent.com/u/32414568"
 #avatar: "images/jonathan_doe.jpg"
+#avatar:
 
-# All the user IDs on other websites that we want to link to. Leave blank what you don't need.
-# The order in which these links appear is controlled in index.html, by reordering the paragraphs.
+
+# All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
+# The order of this list controls the order of the links on the page. Feel free to add.
 links:
-    github:  tsjensen
-    codepen:
-    facebook: your_facebook_username
-    vkontakte: your_vkontakte_username
-    twitter: your_twitter_username
-    weibo: your_weibo_username
-    linkedin:
-    xing:
-    googleplus:
-    vine:
-    instagram:
-    flickr:
-    steam:
-    soundcloud:
-    stackoverflow:
-    reddit:
-    medium:
-    tumblr:
-    lastfm:
-    blog: http://host.domain/your_blog
-    publickey: https://pastebin.com/raw/YOUR_PUBLIC_KEY
-    email: jonathan.doe@host.domain
+  - xing:
+      name: Xing
+      show: false
+      href: https://www.xing.com/profile/YOUR_XING_USERNAME/
+      icon: fab fa-xing
+  - linkedin:
+      name: LinkedIn
+      show: false
+      href: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME/
+      icon: fab fa-linkedin
+  - googleplus:
+      name: Google+
+      show: false
+      href: https://plus.google.com/+YOUR_GOOGLEPLUS_USERNAME
+      icon: fab fa-google-plus
+  - twitter:
+      name: Twitter
+      show: true
+      href: https://twitter.com/YOUR_TWITTER_USERNAME
+      icon: fab fa-twitter
+  - weibo:
+      name: 微博
+      show: true
+      href: https://weibo.com/YOUR_WEIBO_USERNAME
+      icon: fab fa-weibo
+  - vine:
+      name: Vine
+      show: false
+      href: https://vine.co/YOUR_VINE_USERNAME
+      icon: fab fa-vine
+  - facebook:
+      name: Facebook
+      show: false
+      href: https://facebook.com/YOUR_FB_USERNAME
+      icon: fab fa-facebook
+  - vkontakte:
+      name: ВКонтакте
+      show: true
+      href: https://vk.com/YOUR_VK_USERNAME
+      icon: fab fa-vk
+  - instagram:
+      name: Instagram
+      show: false
+      href: https://instagram.com/YOUR_INSTAGRAM_USERNAME
+      icon: fab fa-instagram
+  - flickr:
+      name: Flickr
+      show: false
+      href: https://flickr.com/photos/YOUR_FLICKR_USERNAME
+      icon: fab fa-flickr
+  - steam:
+      name: Steam
+      show: false
+      href: http://steamcommunity.com/id/YOUR_STEAM_CUSTOM_ID
+      icon: fab fa-steam
+  - soundcloud:
+      name: Soundcloud
+      show: false
+      href: https://soundcloud.com/YOUR_SOUNDCLOUD_USERNAME
+      icon: fab fa-soundcloud
+  - lastfm:
+      name: Last.fm
+      show: false
+      href: http://www.last.fm/user/YOUR_LASTFM_USERNAME
+      icon: fab fa-lastfm
+  - github:
+      name: GitHub
+      show: true
+      href: https://github.com/tsjensen
+      icon: fab fa-github
+  - codepen:
+      name: CodePen
+      show: false
+      href: https://codepen.io/YOUR_CODEPEN_USERNAME
+      icon: fab fa-codepen
+  - stackoverflow:
+      name: Stack Overflow
+      show: false
+      href: https://stackoverflow.com/users/YOUR_SO_USERNAME/
+      icon: fab fa-stack-overflow
+  - reddit:
+      name: Reddit
+      show: false
+      href: https://reddit.com/user/YOUR_REDDIT_USERNAME
+      icon: fab fa-reddit
+  - medium:
+      name: Medium
+      show: false
+      href: https://medium.com/@YOUR_MEDIUM_USERNAME
+      icon: fab fa-medium
+  - tumblr:
+      name: Tumblr
+      show: false
+      href: https://YOUR_TUMBLR_USERNAME.tumblr.com/
+      icon: fab fa-tumblr
+  - blog:
+      name: Blog
+      show: true
+      href: http://host.domain/your_blog
+      icon: fas fa-book-open
+  - email:
+      name: Email
+      show: true
+      href: mailto:jonathan.doe@host.domain
+      icon: fas fa-envelope
+  - publickey:
+      name: PGP Key
+      show: true
+      href: https://pastebin.com/raw/YOUR_PUBLIC_KEY
+      icon: fas fa-key
 
-# Featured links appear in their own row below the other links in their own color. Add any number of links.
-# Leave empty to disable. 'icon' is the name of any "solid" icon in the Font Awesome
-# Gallery: https://fontawesome.com/icons?d=gallery&s=solid
-# 'caption' may be empty; if set, text displayed below the icon.
-featured_links:
-#featured_links:
-#  - link_one:
-#      name: Number One
-#      icon: link
-#      link: https://host.domain/foo/
-#      caption: O-n-e
-#  - link_two:
-#      name: Number Two
-#      icon: link
-#      link: https://host.domain/bar/
-#      caption:
-#  - link_three:
-#      name: Number Three
-#      icon: link
-#      link: /baz/
-#      caption: More than<br>one line
+
+# Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
+#extra_html:
+extra_html: >
+    Any (multiline) text containing simple HTML,
+    such as links or ... lorem ipsum.
 
 #EOF
