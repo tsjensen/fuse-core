@@ -20,6 +20,24 @@ summarizes the links to your social media profiles and external content. It is:
   (optional, but these things are helpful to comply with EU data protection laws).
   You'll need a Google Analytics account, of course, and set it up correctly first.
 
+
+## Performance Hint
+
+It is a good idea to increase the cache lifetime of the background image, so that public proxies and users' browsers
+do not need to download it every time. GitHub Pages does not support cache control, but if *your* web server supports
+`.htaccess` files, you may want to add one to the *images* folder like so:
+
+```ApacheConf
+# Cache the large background image for 1 year
+<IfModule mod_headers.c>
+    <Files "background.jpg">
+        Header unset ETag
+        Header set Cache-Control "public, max-age=31536000"
+    </Files>
+</IfModule>
+```
+
+
 ## License
 
 The *Fuse Core* theme is free to use and modify under the terms of the
