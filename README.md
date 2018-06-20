@@ -39,6 +39,7 @@ There are many improvements big and small over front-cover, making *Fuse Core* a
 - Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
 - Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
   because a myriad of problems are already handled by the folks at Bootstrap.
+- [SASS](https://sass-lang.com/) styling instead of raw CSS
 - Up-to-date libraries, especially Font Awesome&nbsp;5.
 - Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including some legal details
   such as IP anonymization and cookie consent popup (all optional).

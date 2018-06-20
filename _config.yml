@@ -4,6 +4,8 @@
 markdown: kramdown
 permalink: pretty
 exclude: ['README.*', 'LICENSE.txt']
+sass:
+    style: expanded
 
 
 # CAUTION
