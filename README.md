@@ -7,18 +7,18 @@
 [![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
 
 This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
-summarizes the links to your social media profiles and external content. It is:
+summarizes the links to your social media profiles and external content.
 
 - *responsive* - adapts to all screen sizes
 - *mobile-friendly*
 - *lightweight* - no JavaScript (except for Google Analytics, if enabled)
-- *easy to configure* - no HTML knowledge required, just change *_config.yml*
+- *easy to configure* - no HTML knowledge required, just change *_config.yml* ([step-by-step guide](https://github.com/tsjensen/fuse-core/wiki/Setup-Instructions))
 - *fast* - All third party components loaded via their CDN (with
   [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)),
   so most resources are already cached from visits to other websites.
-- Optional Google Analytics supported, with IP anonymization and cookie consent popup
+- Optional Google Analytics support, with IP anonymization and cookie consent popup
   (optional, but these things are helpful to comply with EU data protection laws).
-  You'll need a Google Analytics account, of course, and set it up correctly first.
+  You'll need to have a Google Analytics account set up for this to work, of course.
 
 
 ## Performance Hint
@@ -45,11 +45,10 @@ The *Fuse Core* theme is free to use and modify under the terms of the
 
 ## Ancestry
 
-The visual design for this theme is taken from the
-[front-cover](https://github.com/dashingcode/front-cover) theme by [Dashingcode](https://github.com/dashingcode).
-Big thank you, it looks awesome!
+The visual design for this theme is heavily inspired by [Dashingcode](https://github.com/dashingcode)'s
+[front-cover](https://github.com/dashingcode/front-cover). Big thank you, it looks awesome!
 
-However, the *Fuse Core* theme is a complete reimplementation, which makes it very different on the inside.
+However, *Fuse Core* is a complete reimplementation, which makes it very different on the inside.
 There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
 "front-cover Plus":
 
