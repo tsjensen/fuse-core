@@ -58,8 +58,9 @@ There are many improvements big and small over front-cover, making *Fuse Core* a
   because a myriad of problems are already handled by the folks at Bootstrap.
 - [SASS](https://sass-lang.com/) styling instead of raw CSS
 - Up-to-date libraries, especially Font Awesome&nbsp;5.
-- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including some legal details
-  such as IP anonymization and cookie consent popup (all optional).
+- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
+  (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
+  and cookie consent popup (all optional).
 - Search engine control via configurable meta tags
 - Responsive sticky footer
 

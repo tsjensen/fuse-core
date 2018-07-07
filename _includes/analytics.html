@@ -1,0 +1,17 @@
+{% if site.ga %}
+    <!-- Google Analytics -->{% comment %} should be the first script in the HEAD section {% endcomment %}
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '{{ site.ga.account }}', 'auto');{% if site.ga.anonymizeip %}
+        ga('set', 'anonymizeIp', true);{% endif %}
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script>
+        var trackOutboundLink = function(targetName, targetUrl) {
+            ga('send', 'event', 'outbound', 'click', targetName, {
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = targetUrl;}
+            });
+        }
+    </script>{% endif %}

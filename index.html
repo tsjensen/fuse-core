@@ -14,15 +14,7 @@ permalink: /
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if site.url %}<link rel="canonical" href="{{ site.url }}">{% endif %}
-
-    {% if site.ga %}<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga.account }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.ga.account }}'{% if site.ga.anonymizeip %}, {'anonymize_ip': true}{% endif %});
-    </script>{% endif %}
+    {% include analytics.html %}
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon.png">
@@ -90,7 +82,9 @@ permalink: /
 <div class="row justify-content-center links pt-1 pt-sm-2">
 {% for hash in site.links %}{% for linkInfo in hash %}{% if linkInfo[1].show %}
     <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="{{ linkInfo[1].href }}"><i class="{{ linkInfo[1].icon }} fa-fw"></i>
+        href="{{ linkInfo[1].href }}"{% if site.ga %}
+        onclick="trackOutboundLink('{{ linkInfo[1].name }}', '{{ linkInfo[1].href }}'); return false;"
+        {% endif %}><i class="{{ linkInfo[1].icon }} fa-fw"></i>
         <span class="d-inline d-sm-none">{{ linkInfo[1].name }}</span></a></div>
 {% endif %}{% endfor %}{% endfor %}
 </div>
