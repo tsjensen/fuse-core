@@ -18,7 +18,9 @@ summarizes the links to your social media profiles and external content.
   so most resources are already cached from visits to other websites.
 - Optional Google Analytics support, with IP anonymization and cookie consent popup
   (optional, but these things are helpful to comply with EU data protection laws).
-  You'll need to have a Google Analytics account set up for this to work, of course.
+  You'll need to have a Google Analytics account set up for this to work, of course.  
+  We even generate statistics on how often people click on your specific social media links, for example:  
+  ![GA Outbound Stats](README.pic2.png)
 
 
 ## Performance Hint
