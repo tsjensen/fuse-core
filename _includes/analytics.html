@@ -9,9 +9,13 @@
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <script>
         var trackOutboundLink = function(targetName, targetUrl) {
-            ga('send', 'event', 'outbound', 'click', targetName, {
-                'transport': 'beacon',
-                'hitCallback': function(){document.location = targetUrl;}
-            });
+            if (ga.loaded) {
+                ga('send', 'event', 'outbound', 'click', targetName, {
+                    'transport': 'beacon',
+                    'hitCallback': function(){ document.location = targetUrl; }
+                });
+            } else {
+                document.location = targetUrl;
+            }
         }
     </script>{% endif %}
