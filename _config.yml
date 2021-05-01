@@ -46,6 +46,14 @@ ga:
     cookieconsent: true
     anonymizeip: true
 
+# Plausible.io Analytics (alternative to Google Analytics that does not need cookies -> no cookie consent required)
+# A config setting is required in plausible to enable tracking of the outbound links. Details described here:
+# https://plausible.io/docs/outbound-link-click-tracking
+# Leave empty (just "plausible:" with subitems commented out) to disable.
+#plausible:
+plausible:
+    domain: 'tsjensen.github.io'
+
 
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
 # Leave empty for generic placeholder image.

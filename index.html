@@ -28,7 +28,7 @@ permalink: /
     <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
-    {% comment %} Bootstrap should be the first stylesheet {% endcomment %}
+    {%- comment -%} Bootstrap should be the first stylesheet {%- endcomment %}
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk">
@@ -39,7 +39,7 @@ permalink: /
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
     
-    {% if site.ga and site.ga.cookieconsent %}
+    {% if site.ga and site.ga.cookieconsent -%}
     <!-- Cookie Consent popup to comply with EU cookie law -->
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
           href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
@@ -59,7 +59,7 @@ permalink: /
           });
         });
     </script>
-    {% endif %}
+    {%- endif %}
 </head>
 <body class="fullscreen-background">
 
