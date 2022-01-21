@@ -1,0 +1,19 @@
+{
+    "editor.rulers": [120],
+    "editor.wordWrapColumn": 120,
+    "editor.autoClosingBrackets": "never",
+    "editor.codeLens": false,
+    "editor.dragAndDrop": false,
+    "editor.formatOnSave": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.idea": true,
+        "**/.jekyll-cache": true,
+        "**/.jekyll-metadata": true,
+        "**/_site": true,
+        "**/_support": true
+    },
+    "[html]": {
+        "editor.formatOnSave": false
+    }
+}
