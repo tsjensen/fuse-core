@@ -17,7 +17,7 @@ name: Fuse Core
 subtitle: Frontend Developer
 
 # Title attribute of HTML Page, uses 'name' from above if empty
-title:
+title: Fuse Core
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
