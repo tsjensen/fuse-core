@@ -28,13 +28,13 @@ robots:
     crawl: index,follow
 
 # website address when deployed, also given as canonical link
-url: https://tsjensen.github.io/fuse-core/
+url: https://jsolra.github.io/
 
 # The 'baseurl' is prepended to all website-internal links.
 # 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
 # If not empty, be careful to keep the leading slash, and don't add a slash at the end.
 #baseurl: ''
-baseurl: '/fuse-core'
+baseurl: ''
 
 # Enable Google Analytics. Leave empty (just "ga:" with subitems commented out) to disable.
 # In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge the GA cookies.
@@ -83,12 +83,12 @@ links:
       icon: fab fa-google-plus
   - twitter:
       name: Twitter
-      show: true
+      show: false
       href: https://twitter.com/YOUR_TWITTER_USERNAME
       icon: fab fa-twitter
   - weibo:
       name: 微博
-      show: true
+      show: false
       href: https://weibo.com/YOUR_WEIBO_USERNAME
       icon: fab fa-weibo
   - vine:
@@ -103,7 +103,7 @@ links:
       icon: fab fa-facebook
   - vkontakte:
       name: ВКонтакте
-      show: true
+      show: false
       href: https://vk.com/YOUR_VK_USERNAME
       icon: fab fa-vk
   - instagram:
@@ -134,7 +134,7 @@ links:
   - github:
       name: GitHub
       show: true
-      href: https://github.com/tsjensen
+      href: https://github.com/jsolra
       icon: fab fa-github
   - codepen:
       name: CodePen
@@ -164,16 +164,16 @@ links:
   - blog:
       name: Blog
       show: true
-      href: http://host.domain/your_blog
+      href: http://jsolra.github.io/blog
       icon: fas fa-book-open
   - email:
       name: Email
       show: true
-      href: mailto:jonathan.doe@host.domain
+      href: mailto:jisora8@gmail.com
       icon: fas fa-envelope
   - publickey:
       name: PGP Key
-      show: true
+      show: false
       href: https://pastebin.com/raw/YOUR_PUBLIC_KEY
       icon: fas fa-key
 
