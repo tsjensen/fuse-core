@@ -12,12 +12,12 @@ sass:
 # When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
-name: Fuse Core
+name: JISORA
 #subtitle:
-subtitle: Frontend Developer
+subtitle: Client Developer
 
 # Title attribute of HTML Page, uses 'name' from above if empty
-title: Fuse Core
+title: JISORA
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
@@ -181,7 +181,7 @@ links:
 # Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
 #extra_html:
 extra_html: >
-    Any (multiline) text containing simple HTML,
-    such as links or ... lorem ipsum.
+#    Any (multiline) text containing simple HTML,
+#    such as links or ... lorem ipsum.
 
 #EOF
