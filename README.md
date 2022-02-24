@@ -1,86 +1,118 @@
-[DEMO](https://tsjensen.github.io/fuse-core/)
+# Hyde
 
-# Fuse Core
+Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
-**A lightweight Jekyll theme for single-page personal websites.**
-
-[![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
-
-This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
-summarizes the links to your social media profiles and external content.
-
-- *responsive* - adapts to all screen sizes
-- *mobile-friendly*
-- *lightweight* - no JavaScript (except for Google Analytics, if enabled)
-- *easy to configure* - no HTML knowledge required, just change *_config.yml* ([step-by-step guide](https://github.com/tsjensen/fuse-core/wiki/Setup-Instructions))
-- *fast* - All third party components loaded via their CDN (with
-  [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)),
-  so most resources are already cached from visits to other websites.
-- Optional Google Analytics support, with IP anonymization and cookie consent popup
-  (optional, but these things are helpful to comply with EU data protection laws).
-  You'll need to have a Google Analytics account set up for this to work, of course.  
-  We even generate statistics on how often people click on your specific social media links, for example:  
-  ![GA Outbound Stats](README.pic2.png)
+![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
 
 
-## Performance Hint
+## Contents
 
-It is a good idea to increase the cache lifetime of the background image, so that public proxies and users' browsers
-do not need to download it every time. GitHub Pages does not support cache control, but if *your* web server supports
-`.htaccess` files, you may want to add one to the *images* folder like so:
+- [Usage](#usage)
+- [Options](#options)
+  - [Sidebar menu](#sidebar-menu)
+  - [Sticky sidebar content](#sticky-sidebar-content)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
 
-```ApacheConf
-# Cache the large background image for 1 year
-<IfModule mod_headers.c>
-    <Files "background.jpg">
-        Header unset ETag
-        Header set Cache-Control "public, max-age=31536000"
-    </Files>
-</IfModule>
+
+## Usage
+
+Hyde is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+
+
+## Options
+
+Hyde includes some customizable options, typically applied via classes on the `<body>` element.
+
+
+### Sidebar menu
+
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+
 ```
+---
+layout: page
+title: About
+---
+```
+
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+
+
+### Sticky sidebar content
+
+By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disable this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
+
+```html
+<!-- Default sidebar -->
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    ...
+  </div>
+</div>
+
+<!-- Modified sidebar -->
+<div class="sidebar">
+  <div class="container">
+    ...
+  </div>
+</div>
+```
+
+
+### Themes
+
+Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+
+![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
+
+There are eight themes available at this time.
+
+![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+
+To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
+
+```html
+<body class="theme-base-08">
+  ...
+</body>
+```
+
+To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+
+### Reverse layout
+
+![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
+
+Hyde's page orientation can be reversed with a single class.
+
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+
+
+## Development
+
+Hyde has two branches, but only one is used for active development.
+
+- `master` for development.  **All pull requests should be submitted against `master`.**
+- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+
+
+## Author
+
+**Mark Otto**
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
 
 
 ## License
 
-The *Fuse Core* theme is free to use and modify under the terms of the
-[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+Open sourced under the [MIT license](LICENSE.md).
 
-## Ancestry
-
-The visual design for this theme is heavily inspired by [Dashingcode](https://github.com/dashingcode)'s
-[front-cover](https://github.com/dashingcode/front-cover). Big thank you, it looks awesome!
-
-However, *Fuse Core* is a complete reimplementation, which makes it very different on the inside.
-There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
-"front-cover Plus":
-
-- Complete configuration via *_config.yml*, including order of links or adding of new links.
-- Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
-- Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
-  because a myriad of problems are already handled by the folks at Bootstrap.
-- [SASS](https://sass-lang.com/) styling instead of raw CSS
-- Up-to-date libraries, especially Font Awesome&nbsp;5.
-- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
-  (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
-  and cookie consent popup (all optional).
-- Search engine control via configurable meta tags
-- Responsive sticky footer
-
-
-## Credits
-
-This theme draws upon the following work by others:
-
-- Visual appearance from the [front-cover](https://github.com/dashingcode/front-cover) theme by Dashingcode under
-  [MIT license](https://github.com/dashingcode/front-cover/blob/5fb173ed1b130a1414b8f839feea6d4e97cbd9b4/LICENSE).
-- All icons are provided by [Font Awesome](https://fontawesome.com/) under
-  [SIL OFL](https://fontawesome.com/license) license.  
-  The [star icon](https://fontawesome.com/icons/star?style=solid) used as dummy favicon is provided
-  by Font Awesome under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
-- The [background image](https://pxhere.com/en/photo/792989) is used under
-  [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license.
-- The [Open Sans](https://fonts.google.com/specimen/Open+Sans) font by Steve Matteson is used under
-  [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
-- The [Bootstrap](https://getbootstrap.com/) framework is used under
-  [MIT](https://github.com/twbs/bootstrap/blob/9c469cd0e8abaac19c163622ed68b6783dfa366c/LICENSE) license.
-- The [dummy avatar image](images/avatar.svg) was generated using [TinyGraphs](http://www.tinygraphs.com/).
+<3
