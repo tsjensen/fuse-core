@@ -12,29 +12,29 @@ sass:
 # When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
-name: Fuse Core
+name: Deckchair Data
 #subtitle:
-subtitle: Frontend Developer
+subtitle: Uncovering Business Insight Through Data Analytics and Research
 
 # Title attribute of HTML Page, uses 'name' from above if empty
-title: Fuse Core
+title: Deckchair Data
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
 # 'crawl' is the 'Robots' tag http://www.robotstxt.org/meta.html
 robots:
-    description: One line of text describing the content of the page in less than 140 characters.
-    keywords: foo, bar, baz
+    description: Deckchair Data - Uncovering Business Insight Through Data Analytics and Research.
+    keywords: data, datascience, analytics, methodology, market research, insights
     crawl: index,follow
 
 # website address when deployed, also given as canonical link
-url: https://tsjensen.github.io/fuse-core/
+url: https://deckchairdata.github.io/
 
 # The 'baseurl' is prepended to all website-internal links.
 # 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
 # If not empty, be careful to keep the leading slash, and don't add a slash at the end.
 #baseurl: ''
-baseurl: '/fuse-core'
+baseurl: ''
 
 # Enable Google Analytics. Leave empty (just "ga:" with subitems commented out) to disable.
 # In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge the GA cookies.
@@ -42,9 +42,9 @@ baseurl: '/fuse-core'
 # https://support.google.com/analytics/answer/2763052
 #ga:
 ga:
-    account: 'UA-120960520-1'
-    cookieconsent: true
-    anonymizeip: true
+#    account: 'UA-120960520-1'
+#    cookieconsent: true
+#    anonymizeip: true
 
 # Plausible.io Analytics (alternative to Google Analytics that does not need cookies -> no cookie consent required)
 # A config setting is required in plausible to enable tracking of the outbound links. Details described here:
@@ -52,7 +52,7 @@ ga:
 # Leave empty (just "plausible:" with subitems commented out) to disable.
 #plausible:
 plausible:
-    domain: 'tsjensen.github.io'
+#    domain: 'deckchairdata.github.io'
 
 
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
