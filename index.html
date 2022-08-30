@@ -79,6 +79,13 @@ permalink: /
         {% if site.subtitle %}<h3 class="text-center fw-light">{{ site.subtitle }}</h3>{% endif %}
     </div>
 </div>
+    
+
+{% if site.extra_html %}
+<div class="row justify-content-center">
+    <div class="col mt-3 text-sm-center fuse-core-extra">{{ site.extra_html }}</div>
+</div>
+{% endif %}
 
 <div class="row justify-content-center links pt-1 pt-sm-2">
 {% for hash in site.links %}{% for linkInfo in hash %}{% if linkInfo[1].show %}
@@ -89,12 +96,6 @@ permalink: /
         <span class="d-inline d-sm-none">{{ linkInfo[1].name }}</span></a></div>
 {% endif %}{% endfor %}{% endfor %}
 </div>
-
-{% if site.extra_html %}
-<div class="row justify-content-center">
-    <div class="col mt-3 text-sm-center fuse-core-extra">{{ site.extra_html }}</div>
-</div>
-{% endif %}
 
 </div>
 </div>
