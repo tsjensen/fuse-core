@@ -58,8 +58,8 @@ plausible:
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
 # Leave empty for generic placeholder image.
 # You can use your GitHub image:
-avatar: "https://avatars0.githubusercontent.com/u/8897534"
-#avatar: "images/jonathan_doe.jpg"
+#avatar: "https://avatars0.githubusercontent.com/u/8897534"
+avatar: "images/DeckchairDataLogoAssets_DeckchairData_LogoMark_Green.png"
 #avatar:
 
 
@@ -71,11 +71,6 @@ links:
       show: true
       href: https://www.linkedin.com/company/deckchairdata/
       icon: fab fa-linkedin
-  - github:
-      name: GitHub
-      show: false
-      href: https://github.com/tsjensen
-      icon: fab fa-github
   - news:
       name: News
       show: true
@@ -91,6 +86,11 @@ links:
       show: true
       href: https://www.gongos.com
       icon: fas fa-g
+  - github:
+      name: GitHub
+      show: true
+      href: https://github.com/deckchairdata
+      icon: fab fa-github
 
 
 # Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
